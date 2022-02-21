@@ -20,6 +20,7 @@ public class MonosTest {
     void producerTest() {
         Mono<String> stringProducer = Mono.just("een waarde")
                 .doOnNext(c -> log.info("Er loopt een waarde door de stream {}", c));;
+
         log.info("Waarde opgehaald", stringProducer);
 
         stringProducer.subscribe(v -> log.info(v));// geef me een waarde
