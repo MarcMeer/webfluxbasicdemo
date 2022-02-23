@@ -19,5 +19,6 @@ public class EmptyTest {
 
     @Test
     void test_something() throws InterruptedException {
+
     }
 }
